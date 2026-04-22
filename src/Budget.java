@@ -6,7 +6,7 @@ public class Budget {
     private double balance;
     private ArrayList<Expense> expenses;
 
-    // Конструктор по умолчанию (обязателен для JSON)
+    
     public Budget() {
         this.expenses = new ArrayList<>();
     }
@@ -17,7 +17,7 @@ public class Budget {
         this.expenses = new ArrayList<>();
     }
 
-    // --- ГЕТТЕРЫ ---
+    
     public String getName() {
         return name;
     }
@@ -30,7 +30,7 @@ public class Budget {
         return expenses;
     }
 
-    // --- СЕТТЕРЫ (теперь Jackson сможет заполнять поля) ---
+    
 
     public void setName(String name) {
         this.name = name;
@@ -44,7 +44,7 @@ public class Budget {
         this.expenses = expenses;
     }
 
-    // --- ЛОГИКА ---
+    
 
     public void addExpense(Expense expense) {
         if (expense != null && expense.getAmount() > 0) {
