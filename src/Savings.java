@@ -2,7 +2,7 @@ public class Savings extends Budget {
 
     private double goal;
 
-    // Обязательно для JSON
+    
     public Savings() {
         super();
     }
@@ -22,8 +22,7 @@ public class Savings extends Budget {
 
     @Override
     public void displayInfo(){
-        // Используем super.displayInfo(), если хочешь вывести базовую инфу,
-        // либо переопределяем полностью, как у тебя:
+    
         System.out.println("--- SAVINGS GOAL ---");
         System.out.println("Name: " + getName());
         System.out.println("Current Balance: " + getBalance());
@@ -31,21 +30,21 @@ public class Savings extends Budget {
 
         if (goal > 0) {
             double progress = (getBalance() / goal) * 100;
-            // Округлим до 1 знака после запятой для красоты
-            System.out.printf("Progress: %.1f%%\n", progress);
+            
+            System.out.printf("Progress : " + progress + "%");
         }
 
         double remaining = getRemainingToGoal();
         if (remaining > 0) {
             System.out.println("Left to save: " + remaining);
         } else {
-            System.out.println("Goal reached! 🎉");
+            System.out.println("Goal reached! ");
         }
     }
 
     public double getRemainingToGoal() {
         double remaining = goal - getBalance();
-        return Math.max(0, remaining); // Более элегантный способ вернуть 0, если баланс выше цели
+        return Math.max(0, remaining); 
     }
 }
 
