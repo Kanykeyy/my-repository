@@ -7,9 +7,9 @@
 This project is a Command Line Interface (CLI) application that allows users to manage their finances. It supports two types of accounts: standard Budgets and Savings goals.
 
 ## Objectives
-- Implement full CRUD operations for financial records.
-- Ensure data persistence using JSON files.
-- Demonstrate mastery of OOP (Encapsulation, Inheritance, Polymorphism).
+- Implemented full CRUD operations for financial records.
+- Ensured data persistence using JSON files.
+- Demonstrated mastery of OOP (Encapsulation, Inheritance, Polymorphism).
 
 ## Key Requirements (10)
 1. User-friendly CLI Menu.
