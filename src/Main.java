@@ -91,8 +91,13 @@ public class Main {
             System.out.println("3. Remove Expense");
             System.out.println("0. Back");
 
-            int choice = sc.nextInt();
-            sc.nextLine();
+           int choice;
+while (!sc.hasNextInt()) {
+    System.out.println("Error: Please enter a valid number (1-6):");
+    sc.next(); 
+                         }
+           choice = sc.nextInt();
+           sc.nextLine();
 
             switch (choice) {
                 case 1 -> addExpense(b);
